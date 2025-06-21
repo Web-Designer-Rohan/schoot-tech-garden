@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How-To Guides | School Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <script src="js/tutorial.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="download.html" class="nav-link">Downloads</a>
+            <a href="#" class="nav-link active">How-To & Tutorials</a>
+            <a href="ppt.html" class="nav-link">PPT Files</a>
+            <a href="friend.html" class="nav-link">Friend's Setup</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>How-To & Tutorials</h1>
+            <p>Step-by-step guides to help you with common school tech tasks. Learn at your own pace!</p>
+        </header>
+
+        <!-- Bootable USB Section -->
+        <section class="tutorial-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-usb"></i>
+                </div>
+                <h2 class="section-title">How to Make a Bootable USB Drive</h2>
+            </div>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Download the ISO file</h3>
+                <p>Get the operating system ISO file you want to install (Windows, Linux, etc.) from the official source.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Download Rufus</h3>
+                <p>Download the free <a href="https://rufus.ie/" target="_blank">Rufus tool</a> (for Windows) or <a href="https://www.balena.io/etcher/" target="_blank">Balena Etcher</a> (for Mac/Linux).</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Insert your USB drive</h3>
+                <p>Use a USB with at least 8GB capacity. All data will be erased, so back up important files first.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Run Rufus and select your USB</h3>
+                <p>Open Rufus, select your USB from the device dropdown menu.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Select the ISO file</h3>
+                <p>Click "SELECT" and browse to your downloaded ISO file.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">6</div>
+                <h3>Start the process</h3>
+                <p>Click "START" and wait for the process to complete (may take 10-30 minutes).</p>
+            </div>
+
+            <div class="note">
+                <p><strong>Tip:</strong> On some computers, you may need to change the boot order in BIOS to boot from USB.</p>
+            </div>
+
+            <!-- Video placeholder -->
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <i class="fas fa-video"></i>
+                    <p>Video tutorial coming soon!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Windows Installation Section -->
+        <section class="tutorial-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h2 class="section-title">How to Install Windows (On Supported & Unsupported Computers)</h2>
+            </div>
+
+            <h3 style="color: var(--botanical); margin-bottom: 1rem;">Installing Windows Normally</h3>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Create installation media</h3>
+                <p>Use the <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Media Creation Tool</a> from Microsoft to create a bootable USB.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Boot from USB</h3>
+                <p>Restart your computer and boot from the USB (usually by pressing F12, F2, or DEL during startup).</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Follow installation prompts</h3>
+                <p>Select language, edition, and installation type (Custom for clean install).</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Complete setup</h3>
+                <p>Follow the on-screen instructions to complete Windows setup.</p>
+            </div>
+
+            <h3 style="color: var(--botanical); margin-top: 2rem; margin-bottom: 1rem;">Installing/Upgrading on Unsupported Computers</h3>
+
+            <div class="warning">
+                <p><strong>Warning:</strong> These methods may not work on all hardware and could cause instability.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Modify the ISO file</h3>
+                <p>Use tools like <a href="https://github.com/AveYo/MediaCreationTool.bat" target="_blank">MediaCreationTool.bat</a> to create an ISO without hardware checks.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Edit registry during setup</h3>
+                <p>At the installation screen, press Shift+F10 to open command prompt and run registry edits to bypass checks.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Use alternative installation methods</h3>
+                <p>Consider lightweight versions of Windows or alternative operating systems for very old hardware.</p>
+            </div>
+
+            <div class="note">
+                <p><strong>Tip:</strong> Always back up your data before attempting to install on unsupported hardware.</p>
+            </div>
+        </section>
+
+        <!-- Video Tutorials Section -->
+<section class="tutorial-section">
+    <div class="section-header">
+        <div class="section-icon">
+            <i class="fas fa-film"></i>
+        </div>
+        <h2 class="section-title">Video Tutorials</h2>
+    </div>
+
+    <p>Watch these helpful video tutorials for visual guidance:</p>
+
+    <!-- Video 1 -->
+    <div class="video-container" style="margin-top: 2rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1ECCLOD0hb4?si=nb8x0QXLKn_IgNai" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-container" style="margin-top: 2rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ls3JJ8YW-cE?si=bCv2WvfHo3fUlAMO" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-container" style="margin-top: 2rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yaQ1le-_nJ4?si=CZFSdoMGuca2sq5n" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ by Rohan for our school and friends</p>
+        </footer>
+    </div>
+</body>
+</html>
