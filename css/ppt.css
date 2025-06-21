@@ -1,0 +1,192 @@
+/* ===== COLOR PALETTE ===== */
+        :root {
+            --botanical: #3E7C59;
+            --rose: #F28C8C;
+            --cream: #FFF3E0;
+            --deep-blue: #2F4858;
+            --sunshine: #FFD166;
+        }
+
+        /* ===== BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: var(--deep-blue);
+            line-height: 1.6;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,80 Q30,60 50,80 Q70,100 80,80" fill="none" stroke="%233E7C59" stroke-width="0.5" opacity="0.1"/></svg>');
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(47, 72, 88, 0.1);
+        }
+
+        .nav-link {
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--deep-blue);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(47, 72, 88, 0.1);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: var(--botanical);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(62, 124, 89, 0.3);
+        }
+
+        /* ===== PAGE HEADER ===== */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--botanical);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--deep-blue);
+        }
+
+        /* ===== PRESENTATION CARDS ===== */
+        .presentations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 3rem 0;
+        }
+
+        .presentation-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .presentation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .presentation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--botanical);
+        }
+
+        .presentation-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--rose);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .presentation-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--deep-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .presentation-desc {
+            font-size: 0.95rem;
+            color: var(--deep-blue);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.6rem 1.5rem;
+            background: var(--botanical);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: var(--deep-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(47, 72, 88, 0.2);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 3rem 0 1rem;
+            color: var(--deep-blue);
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .presentations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .main-nav {
+                gap: 10px;
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
